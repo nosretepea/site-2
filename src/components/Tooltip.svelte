@@ -10,8 +10,8 @@
 	.tooltip {
 		position: absolute;
 		padding: 8px;
-		background-color: $d-background;
-		color: $d-text;
+		background-color: var(--color-bg);
+		color: var(--color-text);
 		border-radius: 4px;
 		left: 50%;
 		transform: translateX(-50%);

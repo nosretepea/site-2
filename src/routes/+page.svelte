@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Tooltip from '../components/Tooltip.svelte';
-	let showTooltip = false;
+	let showTooltip: boolean = false;
+
+	const removeBorder = () => {
+		document.getElementsByClassName('location')[0].classList.remove('border');
+	};
 
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (event.key === 'Enter') {
@@ -19,11 +23,12 @@
 				<p class="subtitle">
 					software engineer, music enthusiast, cat lover, runner/long walker, and coffee addict
 					based in <span
-						class="location"
+						class="location border"
 						role="button"
 						tabindex="0"
 						on:mouseenter={() => (showTooltip = true)}
 						on:mouseleave={() => (showTooltip = false)}
+						on:click={removeBorder}
 						on:keydown={handleKeyDown}
 					>
 						Boston, MA
@@ -38,7 +43,6 @@
 </div>
 
 <style lang="scss">
-	@import '../styles/colors.scss';
 	@import '../styles/breakpoints.scss';
 
 	.container__outer {
@@ -57,7 +61,7 @@
 	}
 
 	.title {
-		color: $l-pink;
+		color: var(--color-pink);
 		font-size: 3rem;
 		font-weight: 700;
 		text-transform: lowercase;
@@ -67,6 +71,7 @@
 	}
 
 	.subtitle {
+		color: var(--color-text);
 		font-size: 1.125rem;
 		font-weight: 300;
 		padding-top: 1rem;
@@ -87,5 +92,14 @@
 
 	.location {
 		position: relative;
+		&:hover {
+			background: #cccccc;
+			color: #121212;
+		}
+	}
+
+	.border {
+		cursor: pointer;
+		border-bottom: 1px dashed var(--color-text);
 	}
 </style>

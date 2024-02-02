@@ -1,6 +1,37 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { writable, type Writable } from 'svelte/store';
+	import { browser } from '$app/environment';
 	import '@fontsource/dm-serif-display';
 	import '@fontsource/m-plus-1p';
+
+	type ThemeValue = 'light' | 'dark';
+
+	let theme: Writable<ThemeValue> = writable<ThemeValue>('light');
+
+	onMount(() => {
+		if (browser) {
+			const storedTheme = localStorage.getItem('theme');
+			const themeToSet: ThemeValue =
+				storedTheme && (storedTheme === 'light' || storedTheme === 'dark') ? storedTheme : 'light';
+
+			theme.set(themeToSet);
+			applyTheme(themeToSet);
+		}
+	});
+
+	const toggleTheme = () => {
+		theme.update((current) => {
+			const newTheme: ThemeValue = current === 'dark' ? 'light' : 'dark';
+			applyTheme(newTheme);
+			return newTheme;
+		});
+	};
+
+	const applyTheme = (currentTheme: ThemeValue) => {
+		document.body.className = currentTheme + '-theme';
+		localStorage.setItem('theme', currentTheme);
+	};
 </script>
 
 <div class="main">
@@ -9,6 +40,7 @@
 		<a class="nav-item" href="/about">about</a>
 		<a class="nav-item" href="/photos">photos</a>
 	</nav>
+	<button on:click={toggleTheme}>Toggle Theme</button>
 
 	<slot />
 </div>
@@ -27,6 +59,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
+		background: var(--color-bg);
 	}
 
 	.nav {

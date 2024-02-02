@@ -5,11 +5,13 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess({
 		scss: true
+		// scss: {
+		//   prependData: `@import 'src/styles/breakpoints.scss';`,
+		//   includePaths: [path.resolve('src/styles')],
+		// },
 	}),
 	kit: {
 		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
 			fallback: undefined,
