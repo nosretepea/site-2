@@ -65,11 +65,12 @@
 <style>
 	:global(h1, h2, h3, h4, h5, h6) {
 		font-family: 'DM Serif Display', serif;
-		line-height: 0;
+		margin: 0;
 	}
 
 	:global(p, span, a) {
 		font-family: 'M Plus 1p', sans-serif;
+		margin: 0;
 	}
 
 	:global(button) {
