@@ -1,13 +1,15 @@
 <script lang="ts">
+	import '@fontsource/dm-serif-display';
+	import '@fontsource/m-plus-1p';
 	import { onMount } from 'svelte';
 	import { writable, type Writable } from 'svelte/store';
 	import { browser } from '$app/environment';
-	import '@fontsource/dm-serif-display';
-	import '@fontsource/m-plus-1p';
+	import Icon from '../components/Icon.svelte';
 
 	type ThemeValue = 'light' | 'dark';
 
 	let theme: Writable<ThemeValue> = writable<ThemeValue>('light');
+	let hoveredOverTheme: boolean = false;
 
 	onMount(() => {
 		if (browser) {
@@ -35,12 +37,27 @@
 </script>
 
 <div class="main">
+	<div class="icon__container">
+		<button
+			class="icon"
+			on:click={toggleTheme}
+			on:keydown={toggleTheme}
+			on:mouseenter={() => (hoveredOverTheme = true)}
+			on:mouseleave={() => (hoveredOverTheme = false)}
+		>
+			<Icon
+				name={$theme === 'light' ? 'moon' : 'sun'}
+				fillColor={hoveredOverTheme ? 'currentColor' : 'none'}
+				size={30}
+			/>
+		</button>
+	</div>
+
 	<nav class="nav">
 		<a class="nav-item" href="/">home</a>
 		<a class="nav-item" href="/about">about</a>
 		<a class="nav-item" href="/photos">photos</a>
 	</nav>
-	<button on:click={toggleTheme}>Toggle Theme</button>
 
 	<slot />
 </div>
@@ -55,11 +72,32 @@
 		font-family: 'M Plus 1p', sans-serif;
 	}
 
+	:global(button) {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+	}
+
 	.main {
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
 		background: var(--color-bg);
+	}
+
+	.icon__container {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.icon {
+		cursor: pointer;
 	}
 
 	.nav {
