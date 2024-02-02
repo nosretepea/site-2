@@ -1,4 +1,5 @@
 <script lang="ts">
+	import RainbowName from '../components/RainbowName.svelte';
 	import Tooltip from '../components/Tooltip.svelte';
 	let showTooltip: boolean = false;
 
@@ -19,7 +20,7 @@
 	<div class="container__outer">
 		<div class="container__inner">
 			<div>
-				<h1 class="title">Ashley Peterson</h1>
+				<RainbowName />
 				<p class="subtitle">
 					software engineer, music enthusiast, cat lover, runner/long walker, and coffee addict
 					based in <span
@@ -58,16 +59,6 @@
 		flex-grow: 1;
 		justify-content: center;
 		text-align: center;
-	}
-
-	.title {
-		color: var(--color-pink);
-		font-size: 3rem;
-		font-weight: 700;
-		text-transform: lowercase;
-		@include xl {
-			font-size: 4rem;
-		}
 	}
 
 	.subtitle {
