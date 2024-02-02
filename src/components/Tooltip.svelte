@@ -15,6 +15,7 @@
 		border-radius: 4px;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 14rem;
+		width: 16rem;
+		font-size: 0.8rem;
 	}
 </style>
