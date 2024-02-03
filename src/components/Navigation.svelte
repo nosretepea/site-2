@@ -10,6 +10,8 @@
 </nav>
 
 <style lang="scss">
+	@import '../styles/breakpoints.scss';
+
 	@keyframes slide-up {
 		0% {
 			transform: translateY(100%);
@@ -24,7 +26,10 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-top: 1.5rem;
+		margin-top: 5rem;
+		@include sm {
+			margin-top: 1.5rem;
+		}
 
 		&.footer {
 			position: fixed;

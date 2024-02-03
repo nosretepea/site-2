@@ -12,7 +12,7 @@
 			<div>
 				<RainbowName />
 				<p class="subtitle">
-					software engineer, music enthusiast, cat lover, runner/long walker, and coffee addict
+					software engineer, music enthusiast, cat lover, runner, long walk-taker, and coffee addict
 					based in <CityHoverText />
 				</p>
 				<Navigation type="index" />
@@ -37,6 +37,28 @@
 		flex-grow: 1;
 		justify-content: center;
 		text-align: center;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		@include sm {
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+		@include md {
+			padding-left: 12rem;
+			padding-right: 12rem;
+		}
+		@include lg {
+			padding-left: 18rem;
+			padding-right: 18rem;
+		}
+		@include xl {
+			padding-left: 24rem;
+			padding-right: 24rem;
+		}
+		@include xxl {
+			padding-left: 32rem;
+			padding-right: 32rem;
+		}
 	}
 
 	.subtitle {
@@ -44,20 +66,5 @@
 		font-size: 1.125rem;
 		font-weight: 300;
 		padding-top: 1rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
-		@include sm {
-			padding-left: 3.5rem;
-			padding-right: 3.5rem;
-		}
-		@include md {
-			padding-left: 10rem;
-			padding-right: 10rem;
-			font-size: 1rem;
-		}
-		@include lg {
-			padding-left: 16rem;
-			padding-right: 16rem;
-		}
 	}
 </style>
