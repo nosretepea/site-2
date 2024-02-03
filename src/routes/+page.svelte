@@ -1,17 +1,7 @@
 <script lang="ts">
+	import CityHoverText from '../components/CityHoverText.svelte';
+	import Navigation from '../components/Navigation.svelte';
 	import RainbowName from '../components/RainbowName.svelte';
-	import Tooltip from '../components/Tooltip.svelte';
-	let showTooltip: boolean = false;
-
-	const removeBorder = () => {
-		document.getElementsByClassName('location')[0].classList.remove('border');
-	};
-
-	const handleKeyDown = (event: KeyboardEvent) => {
-		if (event.key === 'Enter') {
-			showTooltip = !showTooltip;
-		}
-	};
 </script>
 
 <div
@@ -23,33 +13,21 @@
 				<RainbowName />
 				<p class="subtitle">
 					software engineer, music enthusiast, cat lover, runner/long walker, and coffee addict
-					based in <span
-						class="location border"
-						role="button"
-						tabindex="0"
-						on:mouseenter={() => (showTooltip = true)}
-						on:mouseleave={() => (showTooltip = false)}
-						on:click={removeBorder}
-						on:keydown={handleKeyDown}
-					>
-						Boston, MA
-						{#if showTooltip}
-							<Tooltip richTextContent={`Okay <i>technically</i> the Boston metro area`} />
-						{/if}
-					</span>
+					based in <CityHoverText />
 				</p>
+				<Navigation type="index" />
 			</div>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
+	@import '../styles/colors.scss';
 	@import '../styles/breakpoints.scss';
 
 	.container__outer {
 		display: flex;
 		flex-direction: row;
-		flex-grow: 1;
 		justify-content: center;
 	}
 
@@ -66,31 +44,20 @@
 		font-size: 1.125rem;
 		font-weight: 300;
 		padding-top: 1rem;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 		@include sm {
-			padding-left: 3rem;
-			padding-right: 3rem;
+			padding-left: 3.5rem;
+			padding-right: 3.5rem;
 		}
 		@include md {
+			padding-left: 10rem;
+			padding-right: 10rem;
 			font-size: 1rem;
 		}
 		@include lg {
-			padding-left: 4rem;
-			padding-right: 4rem;
+			padding-left: 16rem;
+			padding-right: 16rem;
 		}
-	}
-
-	.location {
-		position: relative;
-		&:hover {
-			background: #cccccc;
-			color: #121212;
-		}
-	}
-
-	.border {
-		cursor: pointer;
-		border-bottom: 1px dashed var(--color-text);
 	}
 </style>

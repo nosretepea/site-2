@@ -1,5 +1,6 @@
 :global(.light-theme) {
-	--color-bg: #ffffff;
+	--color-main: #ffffff;
+	--color-secondary: #cccccc;
 	--color-text: #121212;
 	--color-red: #c9182c;
 	--color-orange: #eb5905;
@@ -8,10 +9,12 @@
 	--color-blue: #347fc4;
 	--color-purple: #8f05eb;
 	--color-pink: #f92a82;
+	--color-link: #0a122a;
 }
 
 :global(.dark-theme) {
-	--color-bg: #121212;
+	--color-main: #121212;
+	--color-secondary: #212121;
 	--color-text: #ffffff;
 	--color-red: #f86c62;
 	--color-orange: #f09a65;
@@ -20,4 +23,5 @@
 	--color-blue: #5c92ff;
 	--color-purple: #cb6af5;
 	--color-pink: #ff5cb0;
+	--color-link: #7fb7be;
 }
