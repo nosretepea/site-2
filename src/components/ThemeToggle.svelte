@@ -38,7 +38,6 @@
 	<button
 		class="theme-toggle"
 		on:click={toggleTheme}
-		on:keydown={toggleTheme}
 		on:mouseenter={() => (hoveredOverTheme = true)}
 		on:mouseleave={() => (hoveredOverTheme = false)}
 	>
@@ -59,6 +58,7 @@
 	}
 
 	.theme-toggle {
+		display: flex;
 		cursor: pointer;
 	}
 </style>

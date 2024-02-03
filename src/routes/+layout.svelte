@@ -35,7 +35,6 @@
 		padding: 0;
 		font: inherit;
 		cursor: pointer;
-		outline: inherit;
 	}
 
 	.main {
