@@ -79,7 +79,7 @@
 		@include md {
 			display: flex;
 		}
-		padding-right: 1rem;
+		margin-right: 1rem;
 
 		.image {
 			background: black;
@@ -97,11 +97,6 @@
 			@include xl {
 				max-width: 1000px;
 			}
-		}
-
-		p {
-			margin-bottom: 0.5rem;
-			color: var(--color-text);
 		}
 	}
 </style>

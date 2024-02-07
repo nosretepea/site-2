@@ -30,6 +30,11 @@
 		margin: 0;
 	}
 
+	:global(p) {
+		color: var(--color-text);
+		margin-bottom: 0.5rem;
+	}
+
 	:global(button) {
 		background: none;
 		color: inherit;
