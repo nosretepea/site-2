@@ -4,20 +4,14 @@
 	import RainbowName from '../components/RainbowName.svelte';
 </script>
 
-<div
-	style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; text-align: center;"
->
-	<div class="container__outer">
-		<div class="container__inner">
-			<div>
-				<RainbowName />
-				<p class="subtitle">
-					software engineer, music enthusiast, cat lover, runner, long walk-taker, and coffee addict
-					based in <CityHoverText />
-				</p>
-				<Navigation type="index" />
-			</div>
-		</div>
+<div class="container">
+	<div>
+		<RainbowName />
+		<p class="subtitle">
+			software engineer, music enthusiast, cat lover, runner, long walk-taker, and coffee addict
+			based in <CityHoverText />
+		</p>
+		<Navigation type="index" />
 	</div>
 </div>
 
@@ -25,13 +19,8 @@
 	@import '../styles/colors.scss';
 	@import '../styles/breakpoints.scss';
 
-	.container__outer {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.container__inner {
+	.container {
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;

@@ -11,7 +11,9 @@
 
 <div class="main">
 	<ThemeToggle />
-	<slot />
+	<div class="body">
+		<slot />
+	</div>
 	{#if $showNavAtBottom}
 		<Navigation type="footer" />
 	{/if}
@@ -42,5 +44,11 @@
 		flex-direction: column;
 		height: 100vh;
 		background: var(--color-main);
+	}
+
+	.body {
+		height: 100%;
+		padding-top: 30px;
+		padding-bottom: 52px;
 	}
 </style>

@@ -26,9 +26,12 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-top: 5rem;
-		@include sm {
-			margin-top: 1.5rem;
+
+		&.index {
+			margin-top: 5rem;
+			@include sm {
+				margin-top: 1.5rem;
+			}
 		}
 
 		&.footer {
