@@ -38,7 +38,7 @@
 	:global(a) {
 		color: var(--color-link);
 
-		&:hover {
+		&:hover:not(.nav-item) {
 			opacity: calc(50%);
 		}
 	}
