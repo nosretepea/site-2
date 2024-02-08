@@ -33,7 +33,7 @@
 				</p>
 				<p>
 					Listening to music and going to concerts are other favorite activities of mine. Check out
-					what I've been listening to lately on&nbsp;
+					what I've been listening to lately on
 					<a
 						href="https://last.fm/user/oceanseacrest"
 						rel="noreferrer nofollow noopener"
@@ -94,6 +94,9 @@
 		flex-direction: row;
 
 		.content__wrapper {
+			overflow-y: auto;
+			max-height: 75vh;
+
 			@include xl {
 				max-width: 1000px;
 			}

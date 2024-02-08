@@ -35,6 +35,14 @@
 		margin-bottom: 0.5rem;
 	}
 
+	:global(a) {
+		color: var(--color-link);
+
+		&:hover {
+			opacity: calc(50%);
+		}
+	}
+
 	:global(button) {
 		background: none;
 		color: inherit;
