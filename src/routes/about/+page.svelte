@@ -92,6 +92,7 @@
 	.right__container {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 
 		.content__wrapper {
 			overflow-y: auto;
