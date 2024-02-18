@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { onMount, onDestroy } from 'svelte';
+	import { browser } from '$app/environment';
 	import { Image } from '@unpic/svelte';
+	import { currentPhotoIndex, showLightbox } from '../stores';
 	import Icon from './Icon.svelte';
-	import { currentPhotoIndex } from '../stores';
 
 	type Image = {
 		path: string;
@@ -11,6 +13,34 @@
 	};
 
 	export let images: Image[] = [];
+
+	const handleGlobalKeyDown = (event: KeyboardEvent) => {
+		switch (event.key) {
+			case 'Esc':
+			case 'Escape':
+				closeLightbox();
+				break;
+			case 'ArrowLeft':
+				changeSlide(-1);
+				break;
+			case 'ArrowRight':
+				changeSlide(1);
+				break;
+			default:
+		}
+	};
+
+	onMount(() => {
+		if (browser) {
+			window.addEventListener('keydown', handleGlobalKeyDown);
+		}
+	});
+
+	onDestroy(() => {
+		if (browser) {
+			window.removeEventListener('keydown', handleGlobalKeyDown);
+		}
+	});
 
 	const changeSlide = (direction: number): void => {
 		currentPhotoIndex.update((current) => {
@@ -27,10 +57,14 @@
 			}
 		});
 	};
+
+	const closeLightbox = () => {
+		showLightbox.set(false);
+	};
 </script>
 
 <div class="lightbox">
-	<button class="close">
+	<button class="close" on:click={closeLightbox}>
 		<Icon name="close" colorVar="--color-white" fillColor="currentColor" size={50} />
 	</button>
 	<button class="arrow left" on:click={() => changeSlide(-1)}>
