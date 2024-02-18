@@ -13,6 +13,14 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Ashley Peterson - photos page</title>
+	<meta
+		name="description"
+		content="This page contains a gallery of photos that Ashley has taken over the years."
+	/>
+</svelte:head>
+
 <div class="container__outer">
 	<h2 class="title">photos</h2>
 	<div class="container__inner">

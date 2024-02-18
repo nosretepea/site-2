@@ -4,6 +4,11 @@
 	import RainbowName from '../components/RainbowName.svelte';
 </script>
 
+<svelte:head>
+	<title>Ashley Peterson - homepage</title>
+	<meta name="description" content="This is the homepage of Ashley's personal website." />
+</svelte:head>
+
 <div class="container">
 	<div>
 		<RainbowName />

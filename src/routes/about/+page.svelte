@@ -3,10 +3,22 @@
 	import image from '$lib/assets/self/ashley2.jpg';
 </script>
 
+<svelte:head>
+	<title>Ashley Peterson - about page</title>
+	<meta
+		name="description"
+		content="This page contains a summary of Ashley's early life and education, as well as a blurb about her current company and a description of her interests and hobbies."
+	/>
+</svelte:head>
+
 <div class="container__outer">
 	<h2 class="title">about</h2>
 	<div class="container__inner">
 		<div class="left__container">
+			<!-- add an onClick handler that will change the opacity of the image and add 
+						some overlaid text that says like "Fun fact: this was taken at Planet Rose
+						Karaoke Bar in NYC. IYKYK"
+			-->
 			<Image src={image} width={345} height={460} style="border-radius: 8px;" />
 		</div>
 		<div class="right__container">
