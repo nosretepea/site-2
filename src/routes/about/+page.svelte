@@ -1,8 +1,13 @@
+<script lang="ts">
+	import { Image } from '@unpic/svelte';
+	import image from '$lib/assets/self/ashley2.jpg';
+</script>
+
 <div class="container__outer">
 	<h2 class="title">about</h2>
 	<div class="container__inner">
 		<div class="left__container">
-			<div class="image" />
+			<Image src={image} width={345} height={460} style="border-radius: 8px;" />
 		</div>
 		<div class="right__container">
 			<div class="content__wrapper">
@@ -75,18 +80,12 @@
 
 	.left__container {
 		flex-direction: column;
+		flex-shrink: 0;
 		display: none;
 		@include md {
 			display: flex;
 		}
 		margin-right: 1rem;
-
-		.image {
-			background: black;
-			border-radius: 8px;
-			width: 345px;
-			height: 460px;
-		}
 	}
 
 	.right__container {
