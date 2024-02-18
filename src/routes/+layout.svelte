@@ -52,6 +52,14 @@
 		cursor: pointer;
 	}
 
+	:global(.lightbox > .photo__wrapper img) {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		object-position: center;
+		max-height: 80vh;
+	}
+
 	.main {
 		display: flex;
 		flex-direction: column;

@@ -15,7 +15,7 @@
 	<h2 class="title">about</h2>
 	<div class="container__inner">
 		<div class="left__container">
-			<!-- add an onClick handler that will change the opacity of the image and add 
+			<!-- TODO: add an onClick handler that will change the opacity of the image and add 
 						some overlaid text that says like "Fun fact: this was taken at Planet Rose
 						Karaoke Bar in NYC. IYKYK"
 			-->

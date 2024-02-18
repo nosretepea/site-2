@@ -457,33 +457,33 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/PXL_20210727_184005544.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210726_182809484.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210726_150848084.MP.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210627_182113454.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210626_204452024.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210626_200809885.jpg",
@@ -493,33 +493,33 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/PXL_20210626_195838584.MP.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210626_195156637.MP.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210602_012758616.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210601_234149921.MP.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210601_233840107.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210601_190704624.jpg",
@@ -535,9 +535,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/PXL_20210413_034515126.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/PXL_20210331_005125473.jpg",
@@ -553,15 +553,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/PXL_20210124_223115684.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20201231_151956.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20201223_180313.jpg",
@@ -583,9 +583,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20201105_170618.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20201105_164742.jpg",
@@ -595,9 +595,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20201105_161300.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20201105_145444.jpg",
@@ -607,9 +607,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20201103_170634.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20200923_194511.jpg",
@@ -631,9 +631,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20200531_194429.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20200509_151835.jpg",
@@ -643,9 +643,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20200422_195409.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20200228_184405.jpg",
@@ -655,15 +655,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20191231_092627.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20191230_165129.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20191230_160602.jpg",
@@ -679,15 +679,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20191127_163028.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20191125_141552.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20191124_154540.jpg",
@@ -721,15 +721,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20190809_153006.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190720_204410.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190705_210824.jpg",
@@ -739,33 +739,33 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20190610_123855.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190609_163801.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190609_160928.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190608_155206.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190607_204711.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190607_131337.jpg",
@@ -775,9 +775,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20190529_115403.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190527_200551.jpg",
@@ -793,15 +793,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20190526_175111.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190501_192520.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190405_200856.jpg",
@@ -811,33 +811,33 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20190405_193122.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190118_172859.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190101_174925.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20190101_165626.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181223_172513.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181223_161346.jpg",
@@ -859,93 +859,93 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20181124_180317.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181124_165437.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181123_234902.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181123_223111.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181123_125425.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181121_104211.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181121_102640.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181121_092439.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181121_060746.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181115_203546.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181027_181913.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20181018_185202.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180930_130027.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180928_192054.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180922_211139.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180908_201123.jpg",
@@ -979,15 +979,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20180704_213154.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180421_172713.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180324_170711.jpg",
@@ -997,15 +997,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20180323_200619.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180323_200602.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180323_200330.jpg",
@@ -1015,15 +1015,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20180319_202107.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180318_140613.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180304_183459.jpg",
@@ -1033,9 +1033,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20180209_140035.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20180202_071411.jpg",
@@ -1045,15 +1045,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20180131_220401.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171226_174755.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171203_215855.jpg",
@@ -1063,15 +1063,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20171203_211452.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171203_205733.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171203_203917.jpg",
@@ -1081,15 +1081,15 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20171201_232019.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171201_222142.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171201_210305.jpg",
@@ -1111,9 +1111,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20171109_125859.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171108_151346.jpg",
@@ -1123,27 +1123,27 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20171108_150118.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171105_135402.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171105_131055.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171105_130351.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20171105_125029.jpg",
@@ -1153,9 +1153,9 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20171103_173456.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20170916_142216.jpg",
@@ -1165,32 +1165,32 @@ export const images = [
   },
   {
     "path": "src/lib/assets/photography/20170916_132240.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20170821_131728.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20170808_074056.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20170707_204725.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   },
   {
     "path": "src/lib/assets/photography/20170707_204535.jpg",
-    "width": 4032,
-    "height": 3024,
-    "aspectRatio": 1.3333333333333333
+    "width": 3024,
+    "height": 4032,
+    "aspectRatio": 0.75
   }
 ];

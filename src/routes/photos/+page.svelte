@@ -120,6 +120,7 @@
 		}
 		cursor: pointer;
 
+		// TODO: improve focus appearance on photos
 		// &:focus {
 		// 	border: 1px solid var(--color-text);
 		// 	border-radius: 8px;
