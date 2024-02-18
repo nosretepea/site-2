@@ -10,7 +10,8 @@ const imagesDataPromise = Promise.all(
 	imageFiles.map(async (file) => {
 		const filePath = path.join(inputFolder, file);
 		try {
-			const metadata = await sharp(filePath).metadata();
+			const buffer = await sharp(filePath).rotate().toBuffer();
+			const metadata = await sharp(buffer).metadata();
 			return {
 				path: `src/lib/assets/photography/${file}`,
 				width: metadata.width,
