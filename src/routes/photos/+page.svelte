@@ -54,8 +54,8 @@
 	}
 
 	.text__container {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 	}
 
 	.photos__container {
