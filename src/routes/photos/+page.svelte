@@ -68,16 +68,20 @@
 	}
 
 	.text__container {
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
+		@include sm {
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+		}
 	}
 
 	.photos__container {
 		display: grid;
 		overflow-y: auto;
 		max-height: 60vh;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		@include sm {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		@include sm {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -94,7 +98,13 @@
 	}
 
 	.photo__wrapper {
-		margin: 0.25rem;
+		margin-bottom: 0.5rem;
+		@include sm {
+			margin-top: 0.25rem;
+			margin-left: 0.25rem;
+			margin-right: 0.25rem;
+			margin-bottom: 0rem;
+		}
 		cursor: pointer;
 
 		// &:focus {
