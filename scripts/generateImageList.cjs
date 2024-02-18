@@ -1,24 +1,39 @@
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp');
 
 const inputFolder = path.join('src', 'lib', 'assets', 'photography');
 const outputFile = path.join('src', 'lib', 'images.ts');
+const imageFiles = fs.readdirSync(inputFolder);
 
-fs.readdir(inputFolder, (err, files) => {
-	if (err) {
-		console.error('Error reading images directory: ', err);
-		return;
-	}
-
-	const images = files.map((file) => `src/lib/assets/photography/${file}`).reverse();
-
-	const tsContent = `export const images = ${JSON.stringify(images, null, 2)};\n`;
-
-	fs.writeFile(outputFile, tsContent, (err) => {
-		if (err) {
-			console.error('Error writing images module: ', err);
-			return;
+const imagesDataPromise = Promise.all(
+	imageFiles.map(async (file) => {
+		const filePath = path.join(inputFolder, file);
+		try {
+			const metadata = await sharp(filePath).metadata();
+			return {
+				path: `src/lib/assets/photography/${file}`,
+				width: metadata.width,
+				height: metadata.height,
+				aspectRatio: metadata.width / metadata.height
+			};
+		} catch (error) {
+			console.error(`Error processing file ${file}: `, error);
+			return null;
 		}
-		console.log('Images module generated successfully.');
+	})
+);
+
+imagesDataPromise
+	.then((imagesData) => {
+		if (imagesData.some((image) => image === null)) {
+			throw new Error('One or more images could not be processed.');
+		}
+
+		const fileContent = `export const images = ${JSON.stringify(imagesData.reverse(), null, 2)};`;
+		fs.writeFileSync(outputFile, fileContent);
+		console.log('Images data generated successfully.');
+	})
+	.catch((error) => {
+		console.error('An error occurred: ', error);
 	});
-});

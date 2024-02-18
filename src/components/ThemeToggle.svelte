@@ -1,13 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { writable, type Writable } from 'svelte/store';
 	import { browser } from '$app/environment';
 	import Icon from './Icon.svelte';
-
-	type ThemeValue = 'light' | 'dark';
+	import type { ThemeValue } from '../types';
+	import { siteTheme } from '../stores';
 
 	let hoveredOverTheme: boolean = false;
-	let theme: Writable<ThemeValue> = writable<ThemeValue>('light');
 
 	onMount(() => {
 		if (browser) {
@@ -15,13 +13,13 @@
 			const themeToSet: ThemeValue =
 				storedTheme && (storedTheme === 'light' || storedTheme === 'dark') ? storedTheme : 'light';
 
-			theme.set(themeToSet);
+			siteTheme.set(themeToSet);
 			applyTheme(themeToSet);
 		}
 	});
 
 	const toggleTheme = () => {
-		theme.update((current) => {
+		siteTheme.update((current) => {
 			const newTheme: ThemeValue = current === 'dark' ? 'light' : 'dark';
 			applyTheme(newTheme);
 			return newTheme;
@@ -42,7 +40,7 @@
 		on:mouseleave={() => (hoveredOverTheme = false)}
 	>
 		<Icon
-			name={$theme === 'light' ? 'moon' : 'sun'}
+			name={$siteTheme === 'light' ? 'moon' : 'sun'}
 			fillColor={hoveredOverTheme ? 'currentColor' : 'none'}
 			size={30}
 		/>

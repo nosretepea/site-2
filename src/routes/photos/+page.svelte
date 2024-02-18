@@ -1,15 +1,12 @@
 <script lang="ts">
-	import { writable } from 'svelte/store';
-	import { images } from '$lib/images';
+	import { currentPhotoIndex, showLightbox } from '../../stores';
 	import { Image } from '@unpic/svelte';
-
-	let photoIndex = writable(0);
-	let showLightbox = writable(false);
+	import { images } from '$lib/images';
+	import Lightbox from '../../components/Lightbox.svelte';
 
 	const toggleLightbox = (index: number) => {
-		console.log('index is: ', index);
-		photoIndex.set(index);
-		showLightbox.update((val) => !val);
+		currentPhotoIndex.set(index);
+		showLightbox.update((current) => !current);
 	};
 </script>
 
@@ -33,9 +30,13 @@
 		</div>
 		<div class="photos__container">
 			{#each images as image, index}
-				<button class="photo__wrapper" on:click={() => toggleLightbox(index)}>
+				<button
+					tabindex={$showLightbox ? -1 : undefined}
+					class="photo__wrapper"
+					on:click={() => toggleLightbox(index)}
+				>
 					<Image
-						src={image}
+						src={image.path}
 						alt={`Photo ${index}`}
 						height={300}
 						width={1200}
@@ -47,6 +48,10 @@
 		</div>
 	</div>
 </div>
+
+{#if $showLightbox}
+	<Lightbox {images} />
+{/if}
 
 <style lang="scss">
 	@import '../../styles/breakpoints.scss';
