@@ -4,6 +4,13 @@
 	import { Image } from '@unpic/svelte';
 
 	let photoIndex = writable(0);
+	let showLightbox = writable(false);
+
+	const toggleLightbox = (index: number) => {
+		console.log('index is: ', index);
+		photoIndex.set(index);
+		showLightbox.update((val) => !val);
+	};
 </script>
 
 <div class="container__outer">
@@ -17,10 +24,17 @@
 			<p>Click on a photograph to open the slideshow view.</p>
 		</div>
 		<div class="photos__container">
-			{#each images as image}
-				<div class="photo__wrapper">
-					<Image src={image} class="photo" height={300} background="auto" />
-				</div>
+			{#each images as image, index}
+				<button class="photo__wrapper" on:click={() => toggleLightbox(index)}>
+					<Image
+						src={image}
+						alt={`Photo ${index}`}
+						height={300}
+						width={1200}
+						background="auto"
+						style="border-radius: 4px;"
+					/>
+				</button>
 			{/each}
 		</div>
 	</div>
@@ -81,15 +95,9 @@
 
 	.photo__wrapper {
 		margin: 0.25rem;
-	}
-
-	.photo {
-		background-size: cover;
-		background-position: center center;
-		height: 300px;
 		cursor: pointer;
 
-		// &:focus-visible {
+		// &:focus {
 		// 	border: 1px solid var(--color-text);
 		// 	border-radius: 8px;
 		// }
