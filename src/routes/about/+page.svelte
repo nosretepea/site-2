@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { Image } from '@unpic/svelte';
 	import image from '$lib/assets/self/ashley2.jpg';
+	import Bio from '../../components/Bio.svelte';
+
+	let showHiddenText: boolean = false;
+
+	const handlePhotoClick = () => {
+		showHiddenText = !showHiddenText;
+	};
 </script>
 
 <svelte:head>
@@ -19,44 +26,16 @@
 						some overlaid text that says like "Fun fact: this was taken at Planet Rose
 						Karaoke Bar in NYC. IYKYK"
 			-->
-			<Image src={image} width={345} height={460} style="border-radius: 8px;" />
+			<button class="photo__wrapper" on:click={handlePhotoClick}>
+				<Image src={image} width={345} height={460} style="border-radius: 8px;" />
+				{#if showHiddenText}
+					<p class="hidden-text">Fun fact: This selfie was taken at Planet Rose in NYC (iykyk!!)</p>
+				{/if}
+			</button>
 		</div>
 		<div class="right__container">
 			<div class="content__wrapper">
-				<p>Hello! I'm Ashley, a software engineer currently living near Boston, MA.</p>
-				<p>
-					Right now, I am working at{' '}
-					<a
-						href="https://www.lattice.com/"
-						rel="noreferrer nofollow noopener"
-						target="_blank"
-						class="link">Lattice</a
-					>, a company with a people success platform which helps organizations develop, grow, and
-					engage with their employees.
-				</p>
-				<p>
-					I was born in Raleigh, North Carolina, but my family relocated to Henderson, Nevada, when
-					I was about eight. At seventeen, I moved to St. Louis, Missouri, to attend Washington
-					University in St. Louis, where I graduated with a Bachelor of Science in Computer Science
-					and a Minor in Writing. A few months later, I trekked down to Austin, Texas, where I then
-					lived for five and a half years.
-				</p>
-				<p>
-					When I'm not programming, I'm usually walking or running on the various trails in and
-					around Boston, meandering through the city, cooking or baking a new recipe (have recently
-					gotten very into making salsa), or spending too much time on the internet. I also love
-					traveling and taking photos of interesting things that I come across.
-				</p>
-				<p>
-					Listening to music and going to concerts are other favorite activities of mine. Check out
-					what I've been vibing with lately on
-					<a
-						href="https://last.fm/user/oceanseacrest"
-						rel="noreferrer nofollow noopener"
-						target="_blank"
-						class="link">Last.fm</a
-					>.
-				</p>
+				<Bio />
 			</div>
 		</div>
 	</div>
@@ -112,5 +91,15 @@
 				max-width: 1000px;
 			}
 		}
+	}
+
+	.photo__wrapper {
+		position: relative;
+	}
+
+	.hidden-text {
+		position: absolute;
+		top: 50%;
+		text-align: center;
 	}
 </style>
