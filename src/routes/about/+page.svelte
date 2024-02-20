@@ -22,12 +22,17 @@
 	<h2 class="title">about</h2>
 	<div class="container__inner">
 		<div class="left__container">
-			<!-- TODO: add an onClick handler that will change the opacity of the image and add 
-						some overlaid text that says like "Fun fact: this was taken at Planet Rose
-						Karaoke Bar in NYC. IYKYK"
-			-->
-			<button class="photo__wrapper" on:click={handlePhotoClick}>
-				<Image src={image} width={345} height={460} style="border-radius: 8px;" />
+			<button
+				class="photo__wrapper {showHiddenText ? 'fade' : undefined}"
+				on:click={handlePhotoClick}
+			>
+				<Image
+					src={image}
+					width={345}
+					height={460}
+					style="border-radius: 8px;"
+					alt="A selfie of a woman in a rainbow-lit room."
+				/>
 				{#if showHiddenText}
 					<p class="hidden-text">Fun fact: This selfie was taken at Planet Rose in NYC (iykyk!!)</p>
 				{/if}
@@ -95,6 +100,10 @@
 
 	.photo__wrapper {
 		position: relative;
+
+		&.fade > :global(img) {
+			opacity: 35%;
+		}
 	}
 
 	.hidden-text {
