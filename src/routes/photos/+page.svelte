@@ -92,7 +92,7 @@
 	.photos__container {
 		display: grid;
 		overflow-y: auto;
-		max-height: 60vh;
+		max-height: 65vh;
 		@include sm {
 			padding-left: 1rem;
 			padding-right: 1rem;
