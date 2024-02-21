@@ -13,6 +13,8 @@
 	};
 
 	export let images: Image[] = [];
+	$: currentImage = images[$currentPhotoIndex];
+	$: currentAspectRatio = currentImage.aspectRatio;
 
 	const handleGlobalKeyDown = (event: KeyboardEvent) => {
 		switch (event.key) {
@@ -73,32 +75,8 @@
 	<button class="arrow right" on:click={() => changeSlide(1)}>
 		<Icon name="rightCaret" colorVar="--color-white" fillColor="currentColor" size={50} />
 	</button>
-	<div class="photo__container">
-		<div
-			class={`photo__wrapper ${
-				images[$currentPhotoIndex].aspectRatio > 1 ? 'landscape' : 'portrait'
-			}`}
-		>
-			<Image
-				src={images[$currentPhotoIndex].path}
-				alt={`Photo ${$currentPhotoIndex}`}
-				width={images[$currentPhotoIndex].width / 5.2}
-				height={images[$currentPhotoIndex].height / 5.2}
-				layout="constrained"
-				background="auto"
-			/>
-		</div>
-		<!-- 
-							width={images[$currentPhotoIndex].width}
-							height={images[$currentPhotoIndex].height}
-							aspectRatio={images[$currentPhotoIndex].aspectRatio}
-			<div
-			style={`background-image: url(${images[$currentPhotoIndex].path}); width: ${
-				images[$currentPhotoIndex].width / 5.2
-			}px; height: ${
-				images[$currentPhotoIndex].height / 5.2
-			}px; background-size: contain; background-position: center center; background-repeat: no-repeat;`}
-		/> -->
+	<div class="photo__container" style="aspect-ratio: {currentAspectRatio};">
+		<img class="photo" src={currentImage.path} alt="in lightbox" />
 	</div>
 </div>
 
@@ -106,11 +84,11 @@
 	@import '../styles/breakpoints.scss';
 
 	.lightbox {
-		background: rgba(0, 0, 0, 0.9);
+		background: rgba(0, 0, 0, 0.95);
 		position: fixed;
 		inset: 0;
-		z-index: 2;
 		display: flex;
+		z-index: 2;
 		justify-content: center;
 		align-items: center;
 	}
@@ -119,63 +97,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-left: 1rem;
-		margin-right: 1rem;
+		max-width: 95%;
+		max-height: 95%;
 	}
 
-	.photo__wrapper {
-		// @include xs {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
-		// @include sm {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
-
-		// @include md {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
-
-		// @include lg {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
-
-		// @include xl {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
-
-		// @include xxl {
-		// 	&.landscape {
-		// 		max-width: 65%;
-		// 	}
-		// 	&.portrait {
-		// 		max-width: 37%;
-		// 	}
-		// }
+	.photo {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
 	}
 
 	.close {
