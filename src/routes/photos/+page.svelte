@@ -62,6 +62,8 @@
 		align-items: center;
 		padding-left: 1rem;
 		padding-right: 1rem;
+		height: calc(100vh - 52px);
+		overflow: hidden;
 		@include lg {
 			padding-left: 4rem;
 			padding-right: 4rem;

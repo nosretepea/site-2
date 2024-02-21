@@ -2,6 +2,7 @@
 	import { Image } from '@unpic/svelte';
 	import image from '$lib/assets/self/ashley2.jpg';
 	import Bio from '../../components/Bio.svelte';
+	import Socials from '../../components/Socials.svelte';
 
 	let showHiddenText: boolean = false;
 
@@ -28,8 +29,7 @@
 			>
 				<Image
 					src={image}
-					width={345}
-					height={460}
+					aspectRatio={0.75}
 					style="border-radius: 8px;"
 					alt="A selfie of a woman in a rainbow-lit room."
 				/>
@@ -41,6 +41,9 @@
 		<div class="right__container">
 			<div class="content__wrapper">
 				<Bio />
+				<div class="socials__wrapper">
+					<Socials />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -55,6 +58,8 @@
 		align-items: center;
 		padding-left: 1rem;
 		padding-right: 1rem;
+		height: calc(100vh - 52px);
+		overflow: hidden;
 		@include lg {
 			padding-left: 4rem;
 			padding-right: 4rem;
@@ -64,6 +69,7 @@
 	.container__inner {
 		display: flex;
 		flex-direction: row;
+		max-height: 100%;
 	}
 
 	.title {
@@ -77,6 +83,7 @@
 		flex-direction: column;
 		flex-shrink: 0;
 		display: none;
+
 		@include md {
 			display: flex;
 		}
@@ -85,12 +92,17 @@
 
 	.right__container {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-bottom: 148.5px;
 
 		.content__wrapper {
 			overflow-y: auto;
-			max-height: 75vh;
+
+			font-size: 0.9rem;
+			@include lg {
+				font-size: 1rem;
+			}
 
 			@include xl {
 				max-width: 1000px;
@@ -101,6 +113,10 @@
 	.photo__wrapper {
 		position: relative;
 
+		:global(img) {
+			max-height: 50vh;
+		}
+
 		&.fade > :global(img) {
 			opacity: 35%;
 		}
@@ -110,5 +126,9 @@
 		position: absolute;
 		top: 50%;
 		text-align: center;
+	}
+
+	.socials__wrapper {
+		margin-top: 2rem;
 	}
 </style>
