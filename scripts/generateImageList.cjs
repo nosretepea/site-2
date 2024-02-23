@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const inputFolder = path.join('src', 'lib', 'assets', 'photography');
+const inputFolder = path.join('static', 'photography');
 const outputFile = path.join('src', 'lib', 'images.ts');
 const imageFiles = fs.readdirSync(inputFolder);
 
@@ -13,7 +13,7 @@ const imagesDataPromise = Promise.all(
 			const buffer = await sharp(filePath).rotate().toBuffer();
 			const metadata = await sharp(buffer).metadata();
 			return {
-				path: `src/lib/assets/photography/${file}`,
+				path: `/photography/${file}`,
 				width: metadata.width,
 				height: metadata.height,
 				aspectRatio: metadata.width / metadata.height
