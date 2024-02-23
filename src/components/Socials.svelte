@@ -17,14 +17,19 @@
 			aspectRatio={1}
 		/>
 	</a>
-	<a class="social-link" href="https://www.github.com/nosretepea">
+	<a class="social-link" target="_blank" rel="noreferrer" href="https://www.github.com/nosretepea">
 		<Image
 			class="social-icon"
 			src={$siteTheme === 'light' ? githubLight : githubDark}
 			aspectRatio={1}
 		/>
 	</a>
-	<a class="social-link" href="https://www.linkedin.com/in/ashley-p-24387814a">
+	<a
+		class="social-link"
+		target="_blank"
+		rel="noreferrer"
+		href="https://www.linkedin.com/in/ashley-peterson-24387814a/"
+	>
 		<Image src={$siteTheme === 'light' ? linkedinLight : linkedinDark} aspectRatio={1} />
 	</a>
 </span>
@@ -39,13 +44,19 @@
 
 	.social-link {
 		margin-right: 0.5rem;
-		@include xs {
+		@include sm {
 			margin-right: 1rem;
 		}
 
 		:global(img) {
-			width: 30px;
-			height: 30px;
+			width: 25px;
+			height: 25px;
+		}
+		@include xs {
+			:global(img) {
+				width: 30px;
+				height: 30px;
+			}
 		}
 		@include sm {
 			:global(img) {
