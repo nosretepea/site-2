@@ -39,19 +39,13 @@
 
 	.social-link {
 		margin-right: 0.5rem;
-		@include sm {
+		@include xs {
 			margin-right: 1rem;
 		}
 
 		:global(img) {
-			width: 25px;
-			height: 25px;
-		}
-		@include xs {
-			:global(img) {
-				width: 30px;
-				height: 30px;
-			}
+			width: 30px;
+			height: 30px;
 		}
 		@include sm {
 			:global(img) {
