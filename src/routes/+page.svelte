@@ -13,8 +13,8 @@
 	<div>
 		<RainbowName />
 		<p class="subtitle">
-			software engineer, music enthusiast, cat lover, runner, long walk-taker, and coffee addict
-			based in <CityHoverText />
+			software engineer, music enthusiast, cat lover, amateur runner, long walk-taker, and coffee
+			addict based in <CityHoverText />
 		</p>
 		<Navigation type="index" />
 	</div>
