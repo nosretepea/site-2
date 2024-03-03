@@ -2,18 +2,33 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const inputFolder = path.join('static', 'photography');
+const inputFolder = path.join('src', 'lib', 'assets', 'photography');
+const outputFolder = path.join('static', 'photography');
 const outputFile = path.join('src', 'lib', 'images.ts');
+
 const imageFiles = fs.readdirSync(inputFolder);
 
 const imagesDataPromise = Promise.all(
 	imageFiles.map(async (file) => {
-		const filePath = path.join(inputFolder, file);
+		const inputPath = path.join(inputFolder, file);
+		const outputPath = path.join(outputFolder, file.replace(/\..+$/, '.webp'));
+
 		try {
-			const buffer = await sharp(filePath).rotate().toBuffer();
-			const metadata = await sharp(buffer).metadata();
+			const metadata = await sharp(inputPath).metadata();
+
+			const isLandscape = metadata.width > metadata.height;
+
+			let transformer = sharp(inputPath).rotate();
+			if (isLandscape) {
+				transformer = transformer.resize(1600, null);
+			} else {
+				transformer = transformer.resize(null, 1600);
+			}
+
+			await transformer.toFormat('webp').toFile(outputPath);
+
 			return {
-				path: `/photography/${file}`,
+				path: `/photography/${file.replace(/\..+$/, '.webp')}`,
 				width: metadata.width,
 				height: metadata.height,
 				aspectRatio: metadata.width / metadata.height

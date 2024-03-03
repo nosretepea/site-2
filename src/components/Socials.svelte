@@ -48,17 +48,20 @@
 			margin-right: 1rem;
 		}
 
+		width: 25px;
 		:global(img) {
 			width: 25px;
 			height: 25px;
 		}
 		@include xs {
+			width: 30px;
 			:global(img) {
 				width: 30px;
 				height: 30px;
 			}
 		}
 		@include sm {
+			width: 40px;
 			:global(img) {
 				width: 40px;
 				height: 40px;

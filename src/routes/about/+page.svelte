@@ -23,10 +23,7 @@
 	<h2 class="title">about</h2>
 	<div class="container__inner">
 		<div class="left__container">
-			<button
-				class="photo__wrapper {showHiddenText ? 'fade' : undefined}"
-				on:click={handlePhotoClick}
-			>
+			<button class="photo__wrapper {showHiddenText ? 'fade' : ''}" on:click={handlePhotoClick}>
 				<Image
 					src={image}
 					aspectRatio={0.75}
@@ -115,6 +112,7 @@
 
 		:global(img) {
 			max-height: 50vh;
+			width: auto !important;
 		}
 
 		&.fade > :global(img) {
