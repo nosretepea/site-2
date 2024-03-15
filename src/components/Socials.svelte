@@ -28,7 +28,7 @@
 		class="social-link"
 		target="_blank"
 		rel="noreferrer"
-		href="https://www.linkedin.com/in/ashley-peterson-24387814a/"
+		href="https://www.linkedin.com/in/ashley-p-24387814a/"
 	>
 		<Image src={$siteTheme === 'light' ? linkedinLight : linkedinDark} aspectRatio={1} />
 	</a>

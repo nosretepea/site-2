@@ -20,9 +20,9 @@ const imagesDataPromise = Promise.all(
 
 			let transformer = sharp(inputPath).rotate();
 			if (isLandscape) {
-				transformer = transformer.resize(1600, null);
+				transformer = transformer.resize(1400, null);
 			} else {
-				transformer = transformer.resize(null, 1600);
+				transformer = transformer.resize(null, 1400);
 			}
 
 			await transformer.toFormat('webp').toFile(outputPath);
