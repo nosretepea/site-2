@@ -1,5 +1,95 @@
 export const images = [
   {
+    "path": "/photography/PXL_20240821_040124611.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240818_201822628.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240818_035018113.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240806_015243467.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240803_013419051.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240802_173056238.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240801_191633692.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240728_155410423.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240722_001216071.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240721_002329021.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240721_001928570.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240714_050814527.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240618_003641484.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20240618_001803516.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20240123_004251899.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
     "path": "/photography/PXL_20240120_222044236.webp",
     "width": 3072,
     "height": 4080,
