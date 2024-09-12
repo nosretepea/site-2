@@ -5,6 +5,7 @@
 	import Socials from '../../components/Socials.svelte';
 
 	let showHiddenText: boolean = false;
+	let isLoaded: boolean = false;
 
 	const handlePhotoClick = () => {
 		showHiddenText = !showHiddenText;
@@ -24,11 +25,18 @@
 	<div class="container__inner">
 		<div class="left__container">
 			<button class="photo__wrapper {showHiddenText ? 'fade' : ''}" on:click={handlePhotoClick}>
+				<div
+					class="image-placeholder"
+					style="background: url({image}) no-repeat center; background-size: cover; opacity: {isLoaded
+						? 0
+						: 1};"
+				/>
 				<Image
 					src={image}
 					aspectRatio={0.75}
 					style="border-radius: 8px;"
 					alt="A selfie of a woman in a rainbow-lit room."
+					on:load={() => (isLoaded = true)}
 				/>
 				{#if showHiddenText}
 					<p class="hidden-text">Fun fact: This selfie was taken at Planet Rose in NYC (iykyk!!)</p>
@@ -76,6 +84,16 @@
 		color: var(--color-green);
 	}
 
+	.image-placeholder {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		filter: blur(10px);
+		transition: opacity 0.5s ease-in-out;
+	}
+
 	.left__container {
 		flex-direction: column;
 		flex-shrink: 0;
@@ -111,8 +129,8 @@
 		position: relative;
 
 		:global(img) {
-			max-height: 50vh;
-			width: auto !important;
+			height: 400px;
+			width: 300px;
 		}
 
 		&.fade > :global(img) {
