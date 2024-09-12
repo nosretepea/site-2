@@ -40,32 +40,22 @@
 	.social__container {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		@include sm {
+			justify-content: flex-start;
+		}
 	}
 
 	.social-link {
-		margin-right: 0.5rem;
+		margin-right: 1.5rem;
 		@include sm {
 			margin-right: 1rem;
 		}
 
-		width: 25px;
+		width: 40px;
 		:global(img) {
-			width: 25px;
-			height: 25px;
-		}
-		@include xs {
-			width: 30px;
-			:global(img) {
-				width: 30px;
-				height: 30px;
-			}
-		}
-		@include sm {
 			width: 40px;
-			:global(img) {
-				width: 40px;
-				height: 40px;
-			}
+			height: 40px;
 		}
 	}
 </style>

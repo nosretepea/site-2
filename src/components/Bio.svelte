@@ -1,10 +1,13 @@
 <p>Hello! I'm Ashley, a software engineer currently living near Boston, MA.</p>
 <p>
 	Right now, I am working at{' '}
-	<a href="https://www.lattice.com/" rel="noreferrer nofollow noopener" target="_blank" class="link"
-		>Lattice</a
-	>, a company with a people success platform which helps organizations develop, grow, and engage
-	with their employees.
+	<a
+		href="https://www.anaconda.com/"
+		rel="noreferrer nofollow noopener"
+		target="_blank"
+		class="link">Anaconda</a
+	>, a company that specializes in data science tools, open-source software, and package management
+	for Python.
 </p>
 <p>
 	I was born in Raleigh, North Carolina, but my family relocated to Henderson, Nevada, when I was
