@@ -1,5 +1,59 @@
 export const images = [
   {
+    "path": "/photography/PXL_20250929_224756311.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20250909_212418310.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20250718_003619217.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20250709_013720863.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20250707_111807425.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20250706_061103689.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20250706_022119185.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
+    "path": "/photography/PXL_20250704_104657452.webp",
+    "width": 3072,
+    "height": 4080,
+    "aspectRatio": 0.7529411764705882
+  },
+  {
+    "path": "/photography/PXL_20250621_003225572.webp",
+    "width": 4080,
+    "height": 3072,
+    "aspectRatio": 1.328125
+  },
+  {
     "path": "/photography/PXL_20250501_145359118.webp",
     "width": 3072,
     "height": 4080,

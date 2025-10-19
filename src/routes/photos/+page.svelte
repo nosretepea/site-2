@@ -24,7 +24,7 @@
 		<div class="text__container">
 			<p>
 				These photos were shot with the camera on whatever phone I had at the time (newest to
-				oldest: Google Pixel 7 Pro, Google Pixel 5, and Samsung Galaxy S8+).
+				oldest: Google Pixel 9 Pro, Google Pixel 7 Pro, Google Pixel 5, and Samsung Galaxy S8+).
 			</p>
 			<p>Click on a photograph to open the slideshow view.</p>
 		</div>

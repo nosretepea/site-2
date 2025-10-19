@@ -35,7 +35,7 @@
 					src={image}
 					aspectRatio={0.75}
 					style="border-radius: 8px;"
-					alt="A selfie of a woman in a rainbow-lit room."
+					alt="A selfie of a woman in a red, blue, and green lit room."
 					on:load={() => (isLoaded = true)}
 				/>
 				{#if showHiddenText}
@@ -45,7 +45,9 @@
 		</div>
 		<div class="right__container">
 			<div class="content__wrapper">
-				<Bio />
+				<div class="bio__wrapper">
+					<Bio />
+				</div>
 				<div class="socials__wrapper">
 					<Socials />
 				</div>
@@ -65,9 +67,14 @@
 		padding-right: 1rem;
 		height: calc(100vh - 52px);
 		overflow: hidden;
+
 		@include lg {
 			padding-left: 4rem;
 			padding-right: 4rem;
+		}
+		@include xxl {
+			padding-left: 16rem;
+			padding-right: 16rem;
 		}
 	}
 
@@ -98,23 +105,29 @@
 		flex-direction: column;
 		flex-shrink: 0;
 		display: none;
+		margin-right: 1rem;
 
 		@include md {
 			display: flex;
 		}
-		margin-right: 1rem;
+		@include lg {
+			margin-right: 2rem;
+		}
 	}
 
 	.right__container {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		padding-bottom: 148.5px;
+		@include xxl {
+			max-width: 60%;
+		}
 
 		.content__wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
 			overflow-y: auto;
-
 			font-size: 0.9rem;
+
 			@include lg {
 				font-size: 1rem;
 			}
@@ -129,8 +142,7 @@
 		position: relative;
 
 		:global(img) {
-			height: 400px;
-			width: 300px;
+			height: 450px;
 		}
 
 		&.fade > :global(img) {
@@ -146,5 +158,6 @@
 
 	.socials__wrapper {
 		margin-top: 2rem;
+		margin-bottom: 0.5rem;
 	}
 </style>
